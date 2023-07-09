@@ -1,0 +1,25 @@
+@mixin btn($padding: 18px 40px, $width: 162px, $height: 55px) {
+  width: $width;
+  height: $height;
+  padding: $padding;
+}
+
+// .header {
+//   &__title {
+//     @extend %title;
+//   }
+// }
+%btn {
+  display: inline-block;
+  white-space: nowrap;
+  border-radius: 15px;
+  font-weight: 500;
+  text-align: center;
+}
+
+%title {
+  font-size: 45px;
+  font-weight: 700;
+  line-height: 40px;
+  letter-spacing: -0.675px;
+}
