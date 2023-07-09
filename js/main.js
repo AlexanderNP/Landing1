@@ -17,4 +17,11 @@ $(function(){
     $('.problem__block-1').show();
     $('.problem__block-2').hide();
   })
+
+  $('.team__slider').slick({
+    arrows:false,
+    infinite: true,
+    slidesToShow: 3,
+    slidesToScroll: 3
+  });
 });
