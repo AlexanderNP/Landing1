@@ -120,6 +120,12 @@ html, body {
   padding: 100px 0;
 }
 
+.main__team {
+  background: -webkit-gradient(linear, left bottom, left top, from(#FAFAFA), to(#FAFAFA)), #FAE6F5;
+  background: linear-gradient(0deg, #FAFAFA 0%, #FAFAFA 100%), #FAE6F5;
+  padding: 100px 0 165px 0;
+}
+
 .problem__button, .problem__btn, .hero__btn, .header__btn {
   display: inline-block;
   white-space: nowrap;
@@ -128,11 +134,19 @@ html, body {
   text-align: center;
 }
 
-.price__title, .problem__title {
+.team__title, .price__title, .problem__title {
   font-size: 45px;
   font-weight: 700;
   line-height: 40px;
   letter-spacing: -0.675px;
+}
+
+.team__dots-list .slick-dots .slick-active button::before {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
 /*=============================================header==================================*/
@@ -666,21 +680,252 @@ html, body {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
+.price__all:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
 .price__all img {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
-.price__all img:hover {
+.price__all:hover img {
   -webkit-transform: rotate(90deg);
           transform: rotate(90deg);
-}
-.price__all:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
 }
 .price__text {
   color: #96317D;
   font-weight: 500;
   line-height: 24px;
   margin-right: 10px;
+}
+
+/*=============================================team==================================*/
+.team__inner {
+  position: relative;
+}
+.team__heading {
+  text-align: center;
+  margin-bottom: 50px;
+}
+.team__subtitle {
+  color: #96317D;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 120%;
+  margin-bottom: 10px;
+}
+.team__slider .slick-list {
+  margin: 0 -15px;
+}
+.team__slide {
+  padding: 0 15px;
+}
+.team__image-box {
+  border-radius: 15px 15px 0 0;
+  background: url("../images/team/1.png") no-repeat center bottom, url("../images/team/fon-1.svg") no-repeat;
+  height: 370px;
+}
+.team__image-box-2 {
+  border-radius: 15px 15px 0 0;
+  background: url("../images/team/2.png") no-repeat center bottom, url("../images/team/fon-1.svg") no-repeat;
+  height: 370px;
+}
+.team__image-box-3 {
+  border-radius: 15px 15px 0 0;
+  background: url("../images/team/3.png") no-repeat center bottom, url("../images/team/fon-2.svg") no-repeat;
+  height: 370px;
+}
+.team__image-box-4 {
+  border-radius: 15px 15px 0 0;
+  background: url("../images/team/4.png") no-repeat center bottom, url("../images/team/fon-1.svg") no-repeat;
+  height: 370px;
+}
+.team__image-box-5 {
+  border-radius: 15px 15px 0 0;
+  background: url("../images/team/5.png") no-repeat center bottom, url("../images/team/fon-2.svg") no-repeat;
+  height: 370px;
+}
+.team__image-box-6 {
+  border-radius: 15px 15px 0 0;
+  background: url("../images/team/6.png") no-repeat center bottom, url("../images/team/fon-1.svg") no-repeat;
+  height: 370px;
+}
+.team__image-box-7 {
+  border-radius: 15px 15px 0 0;
+  background: url("../images/team/7.png") no-repeat center bottom, url("../images/team/fon-2.svg") no-repeat;
+  height: 370px;
+}
+.team__image-box-8 {
+  border-radius: 15px 15px 0 0;
+  background: url("../images/team/8.png") no-repeat center bottom, url("../images/team/fon-1.svg") no-repeat;
+  height: 370px;
+}
+.team__image-box-9 {
+  border-radius: 15px 15px 0 0;
+  background: url("../images/team/9.png") no-repeat center bottom, url("../images/team/fon-1.svg") no-repeat;
+  height: 370px;
+}
+.team__image-box-10 {
+  border-radius: 15px 15px 0 0;
+  background: url("../images/team/10.png") no-repeat center bottom, url("../images/team/fon-2.svg") no-repeat;
+  height: 370px;
+}
+.team__image-box-11 {
+  border-radius: 15px 15px 0 0;
+  background: url("../images/team/11.png") no-repeat center bottom, url("../images/team/fon-1.svg") no-repeat;
+  height: 370px;
+}
+.team__image-box-12 {
+  border-radius: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: url("../images/team/12.png") no-repeat;
+  height: 647px;
+}
+.team__circle {
+  width: 256px;
+  height: 256px;
+  border-radius: 50%;
+  text-align: center;
+  position: relative;
+}
+.team__circle div {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  border-radius: 50%;
+}
+.team__outter {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.team__in {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transform: scale(0.92);
+          transform: scale(0.92);
+  background: #A95094;
+}
+.team__text-2 {
+  color: #FFF;
+  font-size: 100px;
+  font-weight: 700;
+  line-height: 40px;
+  letter-spacing: -1.5px;
+  margin-bottom: 35px;
+}
+.team__text-3 {
+  color: #FFF;
+}
+.team__content {
+  background-color: #FFF;
+  border-radius: 0 0 15px 15px;
+  padding: 50px 75px 50px 45px;
+  height: 277px;
+}
+.team__info {
+  margin-bottom: 25px;
+}
+.team__fio {
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+.team__experience-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 20px;
+}
+.team__experience-item:last-child {
+  margin-bottom: 0;
+}
+.team__text {
+  color: #96317D;
+  font-weight: 500;
+  margin-left: 12px;
+}
+.team__dots-list .slick-dots {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  bottom: -55px;
+  left: 0;
+}
+.team__dots-list .slick-dots li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-right: 20px;
+}
+.team__dots-list .slick-dots button {
+  position: relative;
+  background-color: #96317D;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  font-size: 0;
+}
+.team__dots-list .slick-dots .slick-active button::before {
+  display: block;
+  content: "";
+  width: 24px;
+  height: 24px;
+  border: 2.4px solid #96317D;
+  border-radius: 50%;
+}
+.team__slider-arrows {
+  position: absolute;
+  right: 0;
+  bottom: -55px;
+}
+.team__slider-arrow {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.team__slider-arrow:hover {
+  -webkit-transform: scale(1.07);
+          transform: scale(1.07);
+}
+.team__slider-prev span {
+  font-weight: 500;
+  margin-right: 40px;
+}
+.team__slider-next span {
+  color: #96317D;
+  font-weight: 500;
+  margin-right: 15px;
 }

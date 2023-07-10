@@ -23,3 +23,10 @@
   line-height: 40px;
   letter-spacing: -0.675px;
 }
+
+%pos{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

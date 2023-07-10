@@ -19,9 +19,21 @@ $(function(){
   })
 
   $('.team__slider').slick({
+    dots: true,
     arrows:false,
     infinite: true,
     slidesToShow: 3,
-    slidesToScroll: 3
+    slidesToScroll: 3,
+    speed: 800,
+    appendDots: $('.team__dots-list')
   });
+
+  $('.team__slider-prev').on('click', function(e){
+    e.preventDefault()
+    $('.team__slider').slick('slickPrev');
+  })
+  $('.team__slider-next').on('click', function(e){
+    e.preventDefault()
+    $('.team__slider').slick('slickNext');
+  })
 });
