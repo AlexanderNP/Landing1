@@ -36,4 +36,23 @@ $(function(){
     e.preventDefault()
     $('.team__slider').slick('slickNext');
   })
+
+  $('.reviews__slider').slick({
+    dots: true,
+    arrows:false,
+    infinite: true,
+    slidesToShow: 2,
+    slidesToScroll: 2,
+    speed: 800,
+    appendDots: $('.reviews__dots-list')
+  });
+
+  $('.reviews__slider-prev').on('click', function(e){
+    e.preventDefault()
+    $('.reviews__slider').slick('slickPrev');
+  })
+  $('.reviews__slider-next').on('click', function(e){
+    e.preventDefault()
+    $('.reviews__slider').slick('slickNext');
+  })
 });

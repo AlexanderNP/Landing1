@@ -371,6 +371,9 @@
     align-items: center;
     transform: scale(0.9);
     background: linear-gradient(0deg, #FAFAFA 0%, #FAFAFA 100%), #FAE6F5;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 40px;
   }
 
   @keyframes progress {
@@ -511,13 +514,16 @@
     display: flex;
     align-items: center;
     transition: all 0.3s;
-    &:hover{
+
+    &:hover {
       transform: scale(1.1);
     }
-    & img{
+
+    & img {
       transition: all 0.3s;
     }
-    &:hover img{
+
+    &:hover img {
       transform: rotate(90deg);
     }
   }
@@ -750,25 +756,150 @@
     right: 0;
     bottom: -55px;
   }
-  &__slider-arrow{
+
+  &__slider-arrow {
     display: inline-flex;
     align-items: center;
     transition: all 0.3s;
-    &:hover{
+
+    &:hover {
       transform: scale(1.07);
     }
   }
+
   &__slider-prev {
-    span{
-    font-weight: 500;
-    margin-right: 40px;
+    span {
+      font-weight: 500;
+      margin-right: 40px;
     }
   }
+
   &__slider-next {
-    span{
-    color: #96317D;
+    span {
+      color: #96317D;
+      font-weight: 500;
+      margin-right: 15px;
+    }
+  }
+}
+
+/*=============================================reviews==================================*/
+
+.reviews {
+
+  &__inner {
+    position: relative;
+  }
+
+  &__title {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 130%;
+    letter-spacing: -0.6px;
+    margin-bottom: 50px;
+  }
+
+  &__slider .slick-list {
+    margin: 0 -15px;
+  }
+
+  &__slide {
+    padding: 0 15px;
+  }
+
+  &__content {
+    height: 417px;
+    background: linear-gradient(0deg, #FAFAFA 0%, #FAFAFA 100%), #FAE6F5;
+    padding: 75px 50px;
+  }
+
+  &__info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 35px;
+
+    img {
+      margin-right: 30px;
+      width: 70px;
+      height: 70px;
+    }
+  }
+
+  &__fio {
+    font-size: 24px;
     font-weight: 500;
-    margin-right: 15px;
+    margin-bottom: 8px;
+    white-space: nowrap;
+  }
+
+  &__text {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 150%;
+  }
+
+  &__dots-list .slick-dots {
+    display: flex;
+    position: absolute;
+    bottom: -55px;
+    left: 0;
+
+    li {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-right: 20px;
+    }
+
+    button {
+      position: relative;
+      background-color: #96317D;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      font-size: 0;
+    }
+
+    & .slick-active button::before {
+      display: block;
+      content: '';
+      width: 24px;
+      height: 24px;
+      border: 2.4px solid #96317D;
+      border-radius: 50%;
+      @extend %pos;
+    }
+  }
+
+  &__slider-arrows {
+    position: absolute;
+    right: 0;
+    bottom: -55px;
+  }
+
+  &__slider-arrow {
+    display: inline-flex;
+    align-items: center;
+    transition: all 0.3s;
+
+    &:hover {
+      transform: scale(1.07);
+    }
+  }
+
+  &__slider-prev {
+    span {
+      font-weight: 500;
+      margin-right: 40px;
+    }
+  }
+
+  &__slider-next {
+    span {
+      color: #96317D;
+      font-weight: 500;
+      margin-right: 15px;
     }
   }
 }
