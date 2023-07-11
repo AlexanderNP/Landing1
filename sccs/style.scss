@@ -903,3 +903,55 @@
     }
   }
 }
+
+/*=============================================evaluation==================================*/
+
+.evaluat {
+  &__grid {
+    display: grid;
+    grid-template: 1fr / repeat(3, 370px);
+    column-gap: 30px;
+  }
+
+  &__grid-item {
+    background-color: #FFF;
+    display: flex;
+    align-items: center;
+    padding: 35px;
+    border-radius: 15px;
+  }
+
+  &__text-2 {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+  }
+
+  &__mark {
+    font-size: 35px;
+    font-weight: 700;
+    line-height: 40px;
+    margin-left: 10px;
+    white-space: nowrap;
+
+    span {
+      font-size: 30px;
+      font-weight: 500;
+    }
+  }
+
+  &__icon {
+    margin-left: 44px;
+    position: relative;
+    &::before {
+      position: absolute;
+      top: -20px;
+      left: -22px;
+      display: block;
+      content: '';
+      width: 1px;
+      height: 65px;
+      background: #E3E3E3;
+    }
+  }
+}

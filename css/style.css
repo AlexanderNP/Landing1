@@ -130,6 +130,12 @@ html, body {
   padding: 100px 0 160px 0;
 }
 
+.main__evaluat {
+  padding: 50px 0;
+  background: -webkit-gradient(linear, left bottom, left top, from(#FAFAFA), to(#FAFAFA)), #FAE6F5;
+  background: linear-gradient(0deg, #FAFAFA 0%, #FAFAFA 100%), #FAE6F5;
+}
+
 .problem__button, .problem__btn, .hero__btn, .header__btn {
   display: inline-block;
   white-space: nowrap;
@@ -1049,4 +1055,58 @@ html, body {
   color: #96317D;
   font-weight: 500;
   margin-right: 15px;
+}
+
+/*=============================================evaluation==================================*/
+.evaluat__grid {
+  display: grid;
+  grid-template: 1fr/repeat(3, 370px);
+  -webkit-column-gap: 30px;
+     -moz-column-gap: 30px;
+          column-gap: 30px;
+}
+.evaluat__grid-item {
+  background-color: #FFF;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 35px;
+  border-radius: 15px;
+}
+.evaluat__text-2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 5px;
+}
+.evaluat__mark {
+  font-size: 35px;
+  font-weight: 700;
+  line-height: 40px;
+  margin-left: 10px;
+  white-space: nowrap;
+}
+.evaluat__mark span {
+  font-size: 30px;
+  font-weight: 500;
+}
+.evaluat__icon {
+  margin-left: 44px;
+  position: relative;
+}
+.evaluat__icon::before {
+  position: absolute;
+  top: -20px;
+  left: -22px;
+  display: block;
+  content: "";
+  width: 1px;
+  height: 65px;
+  background: #E3E3E3;
 }
