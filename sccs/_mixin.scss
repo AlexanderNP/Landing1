@@ -4,11 +4,6 @@
   padding: $padding;
 }
 
-// .header {
-//   &__title {
-//     @extend %title;
-//   }
-// }
 %btn {
   display: inline-block;
   white-space: nowrap;
@@ -24,7 +19,14 @@
   letter-spacing: -0.675px;
 }
 
-%pos{
+%title-2 {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 100%;
+  letter-spacing: -0.6px;
+}
+
+%pos {
   position: absolute;
   top: 50%;
   left: 50%;

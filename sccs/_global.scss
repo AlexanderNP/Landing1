@@ -55,3 +55,27 @@ html, body {
   padding: 50px 0;
   background: linear-gradient(0deg, #FAFAFA 0%, #FAFAFA 100%), #FAE6F5;
 }
+
+.main__questions{
+  padding: 100px 0;
+}
+
+.main__call{
+  padding: 100px 0;
+  background: url('../images/call/fon.svg') no-repeat 100% 100%;
+  background-size: cover;
+}
+
+.main__info{
+  padding: 100px 0;
+}
+
+.footer__bottom{
+  padding: 35px 0;
+  margin: 0 51px;
+  background: #FAFAFA;
+}
+
+.footer__entity{
+  padding: 50px 0 30px 0;
+}

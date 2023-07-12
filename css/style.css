@@ -136,7 +136,31 @@ html, body {
   background: linear-gradient(0deg, #FAFAFA 0%, #FAFAFA 100%), #FAE6F5;
 }
 
-.problem__button, .problem__btn, .hero__btn, .header__btn {
+.main__questions {
+  padding: 100px 0;
+}
+
+.main__call {
+  padding: 100px 0;
+  background: url("../images/call/fon.svg") no-repeat 100% 100%;
+  background-size: cover;
+}
+
+.main__info {
+  padding: 100px 0;
+}
+
+.footer__bottom {
+  padding: 35px 0;
+  margin: 0 51px;
+  background: #FAFAFA;
+}
+
+.footer__entity {
+  padding: 50px 0 30px 0;
+}
+
+.info__btn, .call__btn, .problem__button, .problem__btn, .hero__btn, .header__btn {
   display: inline-block;
   white-space: nowrap;
   border-radius: 15px;
@@ -144,11 +168,18 @@ html, body {
   text-align: center;
 }
 
-.team__title, .price__title, .problem__title {
+.questions__title, .team__title, .price__title, .problem__title {
   font-size: 45px;
   font-weight: 700;
   line-height: 40px;
   letter-spacing: -0.675px;
+}
+
+.info__title, .call__title {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 100%;
+  letter-spacing: -0.6px;
 }
 
 .reviews__dots-list .slick-dots .slick-active button::before, .team__dots-list .slick-dots .slick-active button::before {
@@ -1109,4 +1140,341 @@ html, body {
   width: 1px;
   height: 65px;
   background: #E3E3E3;
+}
+
+/*=============================================questions==================================*/
+.questions__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.questions__heading {
+  margin-right: 150px;
+}
+.questions__title {
+  margin-bottom: 25px;
+}
+.questions__text {
+  color: #212121;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 150%;
+  letter-spacing: -0.9px;
+  max-width: 301px;
+}
+.questions__text-link {
+  font-weight: 500;
+  color: #A95094;
+  text-decoration: underline;
+}
+.questions__acc {
+  width: 100%;
+}
+.questions__acc-item {
+  margin-bottom: 20px;
+  border-radius: 5px;
+  background: #FAFAFA;
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  padding: 25px 24px 25px 35px;
+}
+.questions__acc-link {
+  display: block;
+  position: relative;
+}
+.questions__acc-link::after {
+  display: block;
+  content: "";
+  position: absolute;
+  top: -9px;
+  right: 5px;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background-color: #96317D;
+  z-index: -1;
+}
+.questions__acc-head {
+  position: relative;
+  color: #212121;
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: -0.4px;
+}
+.questions__acc-head::after, .questions__acc-head::before {
+  content: "";
+  top: 9px;
+  right: 16px;
+  position: absolute;
+  width: 14px;
+  height: 2px;
+  background-color: #fff;
+  z-index: 0;
+}
+.questions__acc-head::after {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.questions__acc-link--active .questions__acc-head::after {
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+}
+.questions__acc-text {
+  margin-top: 16px;
+  color: #212121;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 150%;
+  letter-spacing: -0.9px;
+}
+
+/*=============================================call==================================*/
+.call__container {
+  max-width: 1341px;
+  margin: 0 auto;
+}
+.call__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 15px;
+  background: #FFF;
+  padding: 50px 84px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.call__heading {
+  margin-right: 60px;
+}
+.call__title {
+  color: #171717;
+  margin-bottom: 10px;
+}
+.call__subtitle {
+  color: #171717;
+  font-size: 20px;
+  font-weight: 500;
+}
+.call__subtitle span {
+  color: #A95094;
+}
+.call__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.call__input {
+  padding: 25px 170px 25px 30px;
+  border-radius: 10px;
+  background: #F5F5F5;
+  margin-right: 30px;
+}
+.call__input::-webkit-input-placeholder {
+  color: #171717;
+  font-family: TT Norms;
+  font-size: 16px;
+  font-weight: 500;
+}
+.call__input::-moz-placeholder {
+  color: #171717;
+  font-family: TT Norms;
+  font-size: 16px;
+  font-weight: 500;
+}
+.call__input:-ms-input-placeholder {
+  color: #171717;
+  font-family: TT Norms;
+  font-size: 16px;
+  font-weight: 500;
+}
+.call__input::-ms-input-placeholder {
+  color: #171717;
+  font-family: TT Norms;
+  font-size: 16px;
+  font-weight: 500;
+}
+.call__input::placeholder {
+  color: #171717;
+  font-family: TT Norms;
+  font-size: 16px;
+  font-weight: 500;
+}
+.call__btn {
+  font-size: 16px;
+  background-color: #A95094;
+  color: #FFF;
+  font-weight: 500;
+  width: 314px;
+  height: 69px;
+  padding: 25px 96px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.call__btn:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+/*=============================================info==================================*/
+.info__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.info__map {
+  position: relative;
+  width: 731px;
+  height: 580px;
+  margin-right: 69px;
+}
+.info__map ymaps {
+  border-radius: 15px;
+}
+.info__content {
+  padding-top: 75px;
+}
+.info__title {
+  margin-bottom: 50px;
+}
+.info__list-item {
+  margin-bottom: 35px;
+}
+.info__text-1 {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+  margin-bottom: 10px;
+}
+.info__email {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 24px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.info__email:hover {
+  color: #993280;
+}
+.info__btn {
+  border: 2px solid #993280;
+  color: #993280;
+  width: 162px;
+  height: 55px;
+  padding: 18px 40px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.info__btn:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+/*=============================================info-map==================================*/
+[class*=copyrights-pane] {
+  display: none !important;
+}
+
+[class*=ground-pane] {
+  -webkit-filter: grayscale(1);
+          filter: grayscale(1);
+}
+
+/*=============================================footer==================================*/
+.footer {
+  /*=============================================footer-top==================================*/
+  /*=============================================footer-bottom==================================*/
+  /*=============================================footer-entity==================================*/
+}
+.footer__top-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 50px;
+}
+.footer__logo {
+  margin-bottom: 40px;
+}
+.footer__top-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.footer__top-item {
+  margin-right: 40px;
+}
+.footer__top-item:last-child {
+  margin-right: 0;
+}
+.footer__top-link {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.footer__top-link:hover {
+  color: #993280;
+}
+.footer__bottom-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.footer__bottom-text {
+  font-weight: 500;
+  line-height: 20px;
+  margin-right: 26px;
+}
+.footer__bottom-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.footer__bottom-item {
+  margin-right: 15px;
+}
+.footer__bottom-item:last-child {
+  margin-right: 0;
+}
+.footer__icons-box {
+  border-radius: 10px;
+  background: #FFF;
+  padding: 19px 26px;
+}
+.footer__icons-box span {
+  font-size: 14.3px;
+  font-weight: 500;
+  line-height: 26px;
+  letter-spacing: -0.429px;
+}
+.footer__entity-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.footer__entity-text {
+  font-weight: 400;
+  line-height: 20px;
 }

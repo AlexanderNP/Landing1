@@ -55,4 +55,42 @@ $(function(){
     e.preventDefault()
     $('.reviews__slider').slick('slickNext');
   })
+
+  $('.questions__acc-link').on('click', function(e){
+    e.preventDefault()
+    if($(this).hasClass('questions__acc-link--active')){
+    $(this).removeClass('questions__acc-link--active')
+    $(this).children('.questions__acc-text').slideUp()
+    }
+    else{
+      $(this).addClass('questions__acc-link--active')
+      $(this).children('.questions__acc-text').slideDown()
+    }
+  })
+
+  let center = [55.757188537709844, 37.617801465576164];
+
+  function init() {
+    let map = new ymaps.Map('info__map-test', {
+      center: center,
+      zoom: 12
+    });
+    map.controls.remove('geolocationControl'); // удаляем геолокацию
+    map.controls.remove('searchControl'); // удаляем поиск
+    map.controls.remove('trafficControl'); // удаляем контроль трафика
+    map.controls.remove('typeSelector'); // удаляем тип
+    map.controls.remove('fullscreenControl'); // удаляем кнопку перехода в полноэкранный режим
+    map.controls.remove('zoomControl'); // удаляем контрол зуммирования
+    map.controls.remove('rulerControl'); // удаляем контрол правил
+    map.behaviors.disable(['scrollZoom']); // отключаем скролл карты (опционально)
+  }
+  ymaps.ready(init);
+  
+  $(".header__nav-list a, .header__geo, .hero__btn, .footer a").on("click", function (e) {
+    e.preventDefault()
+    var id = $(this).attr('href'),
+      top = $(id).offset().top
+    $('body,html').animate({ scrollTop: top }, 1000)
+  })
+
 });
