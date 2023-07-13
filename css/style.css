@@ -103,7 +103,7 @@ html, body {
   color: #FFF;
   background-image: url("../images/hero-section/repairman.png"), url(../images/hero-section/stiralka.png), url(../images/hero-section/fon.svg);
   background-repeat: no-repeat, no-repeat, no-repeat;
-  background-position: 382px 6px, 272px 126px, 470px 74px;
+  background-position: 22vw 6px, 18vw 126px, 25vw 74px;
 }
 
 .main__advant {
@@ -111,8 +111,8 @@ html, body {
 }
 
 .main__problem {
-  background: url("../images/problem/square-star.svg") no-repeat 65% 78%, url("../images/problem/stiralka.png") no-repeat 98% 78%, url("../images/problem/fon-left.svg") no-repeat 100% 78%, -webkit-gradient(linear, left bottom, left top, from(#FAFAFA), to(#FAFAFA)), #FAE6F5;
-  background: url("../images/problem/square-star.svg") no-repeat 65% 78%, url("../images/problem/stiralka.png") no-repeat 98% 78%, url("../images/problem/fon-left.svg") no-repeat 100% 78%, linear-gradient(0deg, #FAFAFA 0%, #FAFAFA 100%), #FAE6F5;
+  background: url("../images/problem/square-star.svg") no-repeat 65vw 78%, url("../images/problem/stiralka.png") no-repeat 65vw 78%, url("../images/problem/fon-left.svg") no-repeat 75vw 78%, -webkit-gradient(linear, left bottom, left top, from(#FAFAFA), to(#FAFAFA)), #FAE6F5;
+  background: url("../images/problem/square-star.svg") no-repeat 65vw 78%, url("../images/problem/stiralka.png") no-repeat 65vw 78%, url("../images/problem/fon-left.svg") no-repeat 75vw 78%, linear-gradient(0deg, #FAFAFA 0%, #FAFAFA 100%), #FAE6F5;
   padding: 115px 0 155px 0;
 }
 
