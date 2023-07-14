@@ -86,11 +86,17 @@ $(function(){
   }
   ymaps.ready(init);
   
-  $(".header__nav-list a, .header__geo, .hero__btn, .footer a").on("click", function (e) {
+  $(".header__link-logo, .header__nav-list a, .header__geo, .hero__btn, .footer a").on("click", function (e) {
     e.preventDefault()
     var id = $(this).attr('href'),
       top = $(id).offset().top
     $('body,html').animate({ scrollTop: top }, 1000)
   })
 
+  $('.overlay, .header__link-logo, .header__burger, .header__nav-list a, .header__geo, .header__btn').on('click', function(e){
+    e.preventDefault()
+    $('.header__inner').toggleClass('header__inner-show')
+    $('.header__burger').toggleClass('open__menu')
+    $('.overlay').toggleClass('overlay-show')
+  })
 });

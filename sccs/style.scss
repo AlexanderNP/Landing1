@@ -38,6 +38,10 @@
     margin-right: 0;
   }
 
+  &__right{
+    display: flex;
+  }
+
   &__geo {
     display: inline-flex;
     align-items: center;
@@ -135,13 +139,15 @@
     align-items: center;
   }
 
+  &__block-wrap{
+    display: flex;
+  }
   &__block-text1 {
     position: relative;
     margin-right: 63px;
     text-align: right;
     font-family: Montserrat, sans-serif;
     font-weight: 600;
-
     span {
       color: #FFC464;
     }
@@ -178,7 +184,8 @@
 /*=============================================advantages==================================*/
 .advant {
   &__inner {
-    display: flex;
+    display: grid;
+    grid-template: 1fr / repeat(4, 1fr);
   }
 
   &__block {
@@ -1290,3 +1297,6 @@
     line-height: 20px;
   }
 }
+
+/*=============================================media==================================*/
+@import "media";

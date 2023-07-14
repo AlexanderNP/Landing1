@@ -13,7 +13,11 @@
 
 <body id="body">
   <div class="wrapper">
+    <div class="overlay"></div>
     <header class="header">
+      <a class="header__burger" href="#">
+        <span></span>
+      </a>
       <div class="container">
         <div class="header__inner">
           <div class="header__logo">
@@ -50,13 +54,15 @@
               </li>
             </ul>
           </nav>
-          <a class="header__geo" href="#info">
-            <img src="images/header/geo.svg" alt="">
-            <span>Москва</span>
-          </a>
-          <a class="header__btn" href="#">
-            Позвонить
-          </a>
+          <div class="header__right">
+            <a class="header__geo" href="#info">
+              <img src="images/header/geo.svg" alt="">
+              <span>Москва</span>
+            </a>
+            <a class="header__btn" href="#">
+              Позвонить
+            </a>
+          </div>
         </div>
       </div>
     </header>
@@ -79,14 +85,16 @@
               <a class="hero__cross" href="#">
                 <img src="images/hero-section/crest.svg" alt="">
               </a>
-              <p class="hero__block-text1"><span>Мы открыты и принимаем заказы до 21:00,</span> позвоните сейчас и мы
-                сделаем
-                скидку
-                15%</p>
-              <a class="hero__link" href="#">
-                <p class="hero__block-text2">Получить скидку</p>
-                <img src="images/hero-section/arrow.svg" alt="">
-              </a>
+              <div class="hero__block-wrap">
+                <p class="hero__block-text1"><span>Мы открыты и принимаем заказы до 21:00,</span> позвоните сейчас и мы
+                  сделаем
+                  скидку
+                  15%</p>
+                <a class="hero__link" href="#">
+                  <p class="hero__block-text2">Получить скидку</p>
+                  <img src="images/hero-section/arrow.svg" alt="">
+                </a>
+              </div>
             </div>
           </div>
       </section>
