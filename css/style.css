@@ -1580,6 +1580,9 @@ html, body {
 }
 /*=============================================900==================================*/
 @media (max-width: 900px) {
+  .fixed-page {
+    overflow: hidden;
+  }
   .overlay {
     position: fixed;
     top: 0;
@@ -1678,7 +1681,7 @@ html, body {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    background-color: #8dac85;
+    background-color: #8591ac;
     z-index: 100;
     -webkit-box-align: center;
         -ms-flex-align: center;
@@ -1688,6 +1691,10 @@ html, body {
     -webkit-transition: all 0.5s;
     transition: all 0.5s;
     overflow: auto;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 150px 0;
   }
   .header__inner-show {
     -webkit-transition: all 0.5s;
@@ -1696,20 +1703,20 @@ html, body {
             transform: translateX(0%);
   }
   .header__logo {
-    margin: 150px 0;
+    margin: 0 0 50px 0;
+  }
+  .header__nav {
+    margin: 0 auto;
   }
   .header__nav-list {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    margin: 0 auto;
+    margin: 0;
   }
   .header__nav-item {
     margin: 0 0 40px 0;
-  }
-  .header__nav-item:last-child {
-    margin-bottom: 75px;
   }
   .header__right {
     -webkit-box-align: center;

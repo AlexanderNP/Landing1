@@ -98,5 +98,6 @@ $(function(){
     $('.header__inner').toggleClass('header__inner-show')
     $('.header__burger').toggleClass('open__menu')
     $('.overlay').toggleClass('overlay-show')
+    $('body').toggleClass('fixed-page')
   })
 });
