@@ -503,7 +503,7 @@
   }
 
   &__table {
-    width: 971px;
+    min-width: 971px;
     height: 419px;
     border-collapse: collapse;
 
@@ -617,6 +617,7 @@
     font-weight: 500;
     line-height: 120%;
     margin-bottom: 10px;
+    white-space: nowrap;
   }
 
   &__title {
@@ -778,6 +779,7 @@
     color: #96317D;
     font-weight: 500;
     margin-left: 12px;
+    white-space: nowrap;
   }
 
   &__dots-list .slick-dots {

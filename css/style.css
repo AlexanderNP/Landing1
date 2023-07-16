@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   padding: 0;
   margin: 0;
@@ -728,7 +729,7 @@ html, body {
           align-items: center;
 }
 .price__table {
-  width: 971px;
+  min-width: 971px;
   height: 419px;
   border-collapse: collapse;
   margin-bottom: 50px;
@@ -824,6 +825,7 @@ html, body {
   font-weight: 500;
   line-height: 120%;
   margin-bottom: 10px;
+  white-space: nowrap;
 }
 .team__slider .slick-list {
   margin: 0 -15px;
@@ -975,6 +977,7 @@ html, body {
   color: #96317D;
   font-weight: 500;
   margin-left: 12px;
+  white-space: nowrap;
 }
 .team__dots-list .slick-dots {
   display: -webkit-box;
@@ -1635,6 +1638,12 @@ html, body {
     font-size: 55px;
     max-width: 550px;
   }
+  .price__table {
+    min-width: 100%;
+  }
+  .team__image-box, .team__image-box-2, .team__image-box-3, .team__image-box-4, .team__image-box-5, .team__image-box-6, .team__image-box-7, .team__image-box-8, .team__image-box-9, .team__image-box-10, .team__image-box-11 {
+    background-size: 350px, 100%;
+  }
 }
 @media (min-width: 900px) {
   .problem__block-1 {
@@ -1829,6 +1838,46 @@ html, body {
     display: block;
   }
 }
+@media (max-width: 800px) {
+  .team__image-box, .team__image-box-2, .team__image-box-3, .team__image-box-4, .team__image-box-5, .team__image-box-6, .team__image-box-7, .team__image-box-8, .team__image-box-9, .team__image-box-10, .team__image-box-11 {
+    background-size: 350px, 100% 100%;
+  }
+  .team__image-box-12 {
+    background-size: 100% 100%;
+  }
+  .team__content {
+    margin: 0 auto;
+    max-width: 370px;
+  }
+}
+/*=============================================700==================================*/
+@media (max-width: 700px) {
+  .price__table td {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .price__subtitle {
+    display: none;
+  }
+  .price__td-title {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 25px;
+  }
+  .price__free, .price__col-1, .price__col-2, .price__col-3 {
+    padding: 0;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .price__free::before, .price__col-1::before, .price__col-2::before, .price__col-3::before {
+    font-size: 18px;
+    content: "Стоимость работы";
+    color: #000;
+    font-weight: 400;
+  }
+}
 /*=============================================600==================================*/
 @media (max-width: 600px) {
   .main__hero {
@@ -1842,11 +1891,73 @@ html, body {
     font-size: 45px;
     max-width: 420px;
   }
+  .problem__title {
+    font-size: 40px;
+  }
+  .problem__block-2 {
+    margin: 0;
+  }
+  .problem__reason-item {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
 }
 /*=============================================500==================================*/
 @media (max-width: 500px) {
   .hero__title {
     font-size: 38px;
+  }
+  /*===============================================================================*/
+  .main__problem {
+    background: url(../images/problem/square-star.svg) no-repeat 18vw 62%, url(../images/problem/stiralka.png) no-repeat center center, url(../images/problem/fon-bottom.svg) no-repeat 0vw 65%, -webkit-gradient(linear, left bottom, left top, from(#FAFAFA), to(#FAFAFA)), #FAE6F5;
+    background: url(../images/problem/square-star.svg) no-repeat 18vw 62%, url(../images/problem/stiralka.png) no-repeat center center, url(../images/problem/fon-bottom.svg) no-repeat 0vw 65%, linear-gradient(0deg, #FAFAFA 0%, #FAFAFA 100%), #FAE6F5;
+    background-size: 40px 40px, 296px 458px, 650px 200px;
+  }
+  .problem__title {
+    font-size: 28px;
+    white-space: nowrap;
+  }
+  .problem__link-1 {
+    font-size: 16px;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    padding: 21px;
+  }
+  .problem__button {
+    width: 359px;
+    height: 57px;
+    padding: 19px 30px;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+  .problem__button:hover {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  /*===============================================================================*/
+  .price__title {
+    font-size: 30px;
+  }
+  /*===============================================================================*/
+  .team__title {
+    font-size: 30px;
+  }
+  .team__image-box, .team__image-box-2, .team__image-box-3, .team__image-box-4, .team__image-box-5, .team__image-box-6, .team__image-box-7, .team__image-box-8, .team__image-box-9, .team__image-box-10, .team__image-box-11 {
+    background-size: 250px, 100%;
+    height: 250px;
+  }
+  .team__content {
+    margin: 0;
+    max-width: 100%;
+  }
+  .team__slider-arrows {
+    bottom: 65px;
   }
 }
 /*=============================================450==================================*/
@@ -1854,7 +1965,7 @@ html, body {
   .header__inner {
     width: 100%;
   }
-  .main__advant {
+  .main__advant, .main__problem, .main__price, .main__team {
     padding: 70px 0;
   }
   .advant__block {
