@@ -495,13 +495,17 @@
       height: 250px;
     }
 
+    &__image-box-12{
+      height: 525px;
+    }
+
     &__content{
       margin: 0;
       max-width: 100%;
     }
 
     &__slider-arrows{
-      bottom: 65px;
+      bottom: -30px;
     }
   }
 }
