@@ -104,6 +104,18 @@
     }
   }
 }
+
+@media (min-width:900px){
+  .problem{
+    &__block-1{
+      display: block;
+    }
+    &__block-media{
+      display: none;
+    }
+  }
+}
+
 /*=============================================900==================================*/
 @media (max-width:900px) {
   .fixed-page{
@@ -265,6 +277,25 @@
     }
     &__block:last-child{
       margin-bottom: 0;
+    }
+  }
+/*===============================================================================*/
+
+  .main__problem{
+    background: url(../images/problem/square-star.svg) no-repeat 25vw 65%, url(../images/problem/stiralka.png) no-repeat center center, url(../images/problem/fon-bottom.svg) no-repeat 25vw 65%, linear-gradient(0deg, #FAFAFA 0%, #FAFAFA 100%), #FAE6F5;
+    background-size: 64px 64px, 400px 541px, 700px 250px;
+  }
+
+  .problem{
+    &__heading-1{
+      text-align: center;
+      margin-bottom: 572px;
+    }
+    &__block-1{
+      display: none;
+    }
+    &__block-media{
+      display: block;
     }
   }
 }

@@ -4,19 +4,9 @@ $(function(){
     $('.hero__block-bottom').addClass('hero__block-bottom--hidden')
   })
 
-  $('.problem__block-2').hide();
+  /*==================================*/
 
-  $('.problem__btn').on('click',function(e){
-    e.preventDefault()
-    $('.problem__block-1').hide();
-    $('.problem__block-2').show();
-  })
 
-  $('.problem__link').on('click',function(e){
-    e.preventDefault()
-    $('.problem__block-1').show();
-    $('.problem__block-2').hide();
-  })
 
   $('.team__slider').slick({
     dots: true,
@@ -100,4 +90,41 @@ $(function(){
     $('.overlay').toggleClass('overlay-show')
     $('body').toggleClass('fixed-page')
   })
+
+  $('.problem__block-2').hide();
+
+  $('.problem__btn').on('click',function(e){
+    e.preventDefault()
+    $('.problem__block-1').hide();
+    $('.problem__block-2').show();
+  })
+
+  $('.problem__link-1').on('click', function(e){
+    e.preventDefault()
+    $('.problem__btn-list').slideToggle();
+    $('.problem__link-1 img').toggleClass('problem__svg--active')
+  })
+
+  $('.problem__btn-link').on('click', function(e){
+    e.preventDefault()
+    $('.problem__block-media').hide();
+    $('.problem__block-2').show();
+  })
+
+  
+  if($(window).width() > 900){
+    $('.problem__link').on('click',function(e){
+      e.preventDefault()
+      $('.problem__block-1').show();
+      $('.problem__block-2').hide();
+      $('.problem__block-media').hide();
+    })
+  } else{
+    $('.problem__link').on('click',function(e){
+      e.preventDefault()
+      $('.problem__block-media').show();
+      $('.problem__block-2').hide();
+      $('.problem__block-1').hide();
+    })
+  }
 });
