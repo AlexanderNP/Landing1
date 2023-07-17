@@ -1304,6 +1304,7 @@ html, body {
 .call__container {
   max-width: 1341px;
   margin: 0 auto;
+  padding: 0 15px;
 }
 .call__inner {
   display: -webkit-box;
@@ -1574,6 +1575,54 @@ html, body {
     max-width: 520px;
     margin-right: 200px;
   }
+  .evaluat__inner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .evaluat__grid {
+    grid-template: 1fr/repeat(3, 220px);
+  }
+  .evaluat__grid-item {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .evaluat__text {
+    margin-bottom: 30px;
+  }
+  .evaluat__icon {
+    margin: 0;
+  }
+  .evaluat__icon:before {
+    width: 150px;
+    height: 1px;
+    left: -36px;
+  }
+  .call__inner {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .call__heading {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-right: 0;
+    margin-bottom: 35px;
+  }
 }
 /*=============================================1150==================================*/
 @media (max-width: 1150px) {
@@ -1617,6 +1666,33 @@ html, body {
     margin-bottom: 0;
     margin-right: 25px;
   }
+  .questions__inner {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .questions__heading {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 50px;
+    margin-right: 0;
+  }
+  .questions__text {
+    max-width: 527px;
+    text-align: center;
+  }
 }
 /*=============================================1000==================================*/
 @media (max-width: 1000px) {
@@ -1643,6 +1719,13 @@ html, body {
   }
   .team__image-box, .team__image-box-2, .team__image-box-3, .team__image-box-4, .team__image-box-5, .team__image-box-6, .team__image-box-7, .team__image-box-8, .team__image-box-9, .team__image-box-10, .team__image-box-11 {
     background-size: 350px, 100%;
+  }
+  .reviews__content {
+    max-width: 750px;
+    margin: 0 auto;
+  }
+  .reviews__text {
+    max-width: 595px;
   }
 }
 @media (min-width: 900px) {
@@ -1849,6 +1932,27 @@ html, body {
     margin: 0 auto;
     max-width: 370px;
   }
+  .evaluat__grid {
+    grid-template: repeat(3, 1fr)/1fr;
+    row-gap: 20px;
+  }
+  .questions__heading {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .questions__text {
+    text-align: start;
+  }
+  .call__form {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .call__input {
+    margin-bottom: 20px;
+  }
 }
 /*=============================================700==================================*/
 @media (max-width: 700px) {
@@ -1876,6 +1980,17 @@ html, body {
     content: "Стоимость работы";
     color: #000;
     font-weight: 400;
+  }
+  .questions__acc-link::after {
+    width: 28px;
+    height: 28px;
+  }
+  .questions__acc-head {
+    font-size: 18px;
+  }
+  .questions__acc-head::after, .questions__acc-head::before {
+    top: 5px;
+    right: 12px;
   }
 }
 /*=============================================600==================================*/
@@ -1905,6 +2020,19 @@ html, body {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
+  }
+  .questions__acc-link::after {
+    width: 20px;
+    height: 20px;
+  }
+  .questions__acc-head {
+    font-size: 16px;
+    white-space: wrap;
+  }
+  .questions__acc-head::after, .questions__acc-head::before {
+    top: 0px;
+    right: 10px;
+    width: 10px;
   }
 }
 /*=============================================500==================================*/
@@ -1962,13 +2090,62 @@ html, body {
   .team__slider-arrows {
     bottom: -30px;
   }
+  /*===============================================================================*/
+  .reviews__title {
+    font-size: 30px;
+  }
+  .reviews__content {
+    padding: 30px;
+    height: 350px;
+  }
+  .reviews__info img {
+    margin-right: 20px;
+    width: 40px;
+    height: 40px;
+  }
+  .reviews__fio {
+    font-size: 16px;
+  }
+  .reviews__text {
+    font-size: 14px;
+  }
+  /*===============================================================================*/
+  .questions__title {
+    font-size: 30px;
+  }
+  .questions__acc-link::after {
+    top: -16px;
+    right: -16px;
+  }
+  .questions__acc-head {
+    font-size: 15px;
+  }
+  .questions__acc-head::after, .questions__acc-head::before {
+    top: -6px;
+    right: -11px;
+  }
+  /*===============================================================================*/
+  .call__title {
+    font-size: 30px;
+    white-space: nowrap;
+  }
+  .call__input {
+    position: relative;
+    margin-right: 0;
+    padding: 25px 70px 25px 30px;
+    max-width: 250px;
+  }
+  .call__btn {
+    max-width: 250px;
+    padding: 25px 60px;
+  }
 }
 /*=============================================450==================================*/
 @media (max-width: 450px) {
   .header__inner {
     width: 100%;
   }
-  .main__advant, .main__problem, .main__price, .main__team {
+  .main__advant, .main__problem, .main__price, .main__team, .main__reviews {
     padding: 70px 0;
   }
   .advant__block {
@@ -1980,6 +2157,9 @@ html, body {
   .advant__image {
     margin-right: 0;
     margin-bottom: 25px;
+  }
+  .reviews__slider-arrows {
+    bottom: -26px;
   }
 }
 /*=============================================400==================================*/

@@ -29,6 +29,49 @@
       margin-right: 200px;
     }
   }
+
+  .evaluat {
+    &__inner {
+      display: flex;
+      justify-content: center;
+    }
+
+    &__grid {
+      grid-template: 1fr/repeat(3, 220px);
+    }
+
+    &__grid-item {
+      flex-direction: column;
+    }
+
+    &__text {
+      margin-bottom: 30px;
+    }
+
+    &__icon {
+      margin: 0;
+
+      &:before {
+        width: 150px;
+        height: 1px;
+        left: -36px;
+      }
+    }
+  }
+
+  .call {
+    &__inner {
+      flex-direction: column;
+    }
+
+    &__heading {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-right: 0;
+      margin-bottom: 35px;
+    }
+  }
 }
 
 /*=============================================1150==================================*/
@@ -74,6 +117,26 @@
     &__image {
       margin-bottom: 0;
       margin-right: 25px;
+    }
+  }
+
+  .questions {
+    &__inner {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    &__heading {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 50px;
+      margin-right: 0;
+    }
+
+    &__text {
+      max-width: 527px;
+      text-align: center;
     }
   }
 }
@@ -127,6 +190,17 @@
     &__image-box-10,
     &__image-box-11 {
       background-size: 350px, 100%;
+    }
+  }
+
+  .reviews {
+    &__content {
+      max-width: 750px;
+      margin: 0 auto;
+    }
+
+    &__text {
+      max-width: 595px;
     }
   }
 }
@@ -358,6 +432,32 @@
     }
   }
 
+  .evaluat {
+    &__grid {
+      grid-template: repeat(3, 1fr) / 1fr;
+      row-gap: 20px;
+    }
+  }
+
+  .questions {
+    &__heading {
+      align-items: flex-start;
+    }
+
+    &__text {
+      text-align: start;
+    }
+  }
+
+  .call {
+    &__form {
+      flex-direction: column;
+    }
+
+    &__input {
+      margin-bottom: 20px;
+    }
+  }
 }
 
 /*=============================================700==================================*/
@@ -395,6 +495,25 @@
       }
     }
   }
+
+  .questions {
+    &__acc-link {
+      &::after {
+        width: 28px;
+        height: 28px;
+      }
+    }
+
+    &__acc-head {
+      font-size: 18px;
+
+      &::after,
+      &::before {
+        top: 5px;
+        right: 12px;
+      }
+    }
+  }
 }
 
 /*=============================================600==================================*/
@@ -427,6 +546,27 @@
     &__reason-item {
       flex-direction: column;
       align-items: flex-start;
+    }
+  }
+
+  .questions {
+    &__acc-link {
+      &::after {
+        width: 20px;
+        height: 20px;
+      }
+    }
+
+    &__acc-head {
+      font-size: 16px;
+      white-space: wrap;
+
+      &::after,
+      &::before {
+        top: 0px;
+        right: 10px;
+        width: 10px;
+      }
     }
   }
 }
@@ -479,7 +619,7 @@
     &__title {
       font-size: 30px;
     }
-    
+
     &__image-box,
     &__image-box-2,
     &__image-box-3,
@@ -495,17 +635,85 @@
       height: 250px;
     }
 
-    &__image-box-12{
+    &__image-box-12 {
       height: 525px;
     }
 
-    &__content{
+    &__content {
       margin: 0;
       max-width: 100%;
     }
 
-    &__slider-arrows{
+    &__slider-arrows {
       bottom: -30px;
+    }
+  }
+
+  /*===============================================================================*/
+  .reviews {
+    &__title {
+      font-size: 30px;
+    }
+
+    &__content {
+      padding: 30px;
+      height: 350px;
+    }
+
+    &__info img {
+      margin-right: 20px;
+      width: 40px;
+      height: 40px;
+    }
+
+    &__fio {
+      font-size: 16px;
+    }
+
+    &__text {
+      font-size: 14px;
+    }
+  }
+
+  /*===============================================================================*/
+  .questions {
+    &__title {
+      font-size: 30px;
+    }
+
+    &__acc-link {
+      &::after {
+        top: -16px;
+        right: -16px;
+      }
+    }
+
+    &__acc-head {
+      font-size: 15px;
+
+      &::after,
+      &::before {
+        top: -6px;
+        right: -11px;
+      }
+    }
+  }
+
+  /*===============================================================================*/
+  .call {
+    &__title {
+      font-size: 30px;
+      white-space: nowrap;
+    }
+    &__input{
+      position: relative;
+      margin-right: 0;
+      padding: 25px 70px 25px 30px;
+      max-width: 250px;
+    }
+    &__btn{
+      max-width: 250px;
+      padding: 25px 60px;
     }
   }
 }
@@ -524,7 +732,8 @@
     &__advant,
     &__problem,
     &__price,
-    &__team {
+    &__team,
+    &__reviews {
       padding: 70px 0;
     }
   }
@@ -540,6 +749,11 @@
     }
   }
 
+  .reviews {
+    &__slider-arrows {
+      bottom: -26px;
+    }
+  }
 }
 
 /*=============================================400==================================*/

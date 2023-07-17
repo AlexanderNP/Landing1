@@ -51,7 +51,24 @@ $(function(){
     slidesToShow: 2,
     slidesToScroll: 2,
     speed: 800,
-    appendDots: $('.reviews__dots-list')
+    appendDots: $('.reviews__dots-list'),
+    responsive: [
+      {
+        breakpoint: 1000,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        }
+      },
+      {
+        breakpoint: 800,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          dots:false
+        }
+      },
+    ]
   });
 
   $('.reviews__slider-prev').on('click', function(e){
