@@ -1984,12 +1984,13 @@ html, body {
   .questions__acc-link::after {
     width: 28px;
     height: 28px;
+    top: -7px;
   }
   .questions__acc-head {
     font-size: 18px;
   }
   .questions__acc-head::after, .questions__acc-head::before {
-    top: 5px;
+    top: 6px;
     right: 12px;
   }
 }
@@ -2024,13 +2025,14 @@ html, body {
   .questions__acc-link::after {
     width: 20px;
     height: 20px;
+    top: -2px;
   }
   .questions__acc-head {
     font-size: 16px;
     white-space: wrap;
   }
   .questions__acc-head::after, .questions__acc-head::before {
-    top: 0px;
+    top: 7px;
     right: 10px;
     width: 10px;
   }
@@ -2121,7 +2123,7 @@ html, body {
     font-size: 15px;
   }
   .questions__acc-head::after, .questions__acc-head::before {
-    top: -6px;
+    top: -7px;
     right: -11px;
   }
   /*===============================================================================*/

@@ -501,6 +501,7 @@
       &::after {
         width: 28px;
         height: 28px;
+        top:-7px;
       }
     }
 
@@ -509,7 +510,7 @@
 
       &::after,
       &::before {
-        top: 5px;
+        top: 6px;
         right: 12px;
       }
     }
@@ -554,6 +555,7 @@
       &::after {
         width: 20px;
         height: 20px;
+        top:-2px;
       }
     }
 
@@ -563,7 +565,7 @@
 
       &::after,
       &::before {
-        top: 0px;
+        top: 7px;
         right: 10px;
         width: 10px;
       }
@@ -693,7 +695,7 @@
 
       &::after,
       &::before {
-        top: -6px;
+        top: -7px;
         right: -11px;
       }
     }
