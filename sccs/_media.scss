@@ -203,6 +203,42 @@
       max-width: 595px;
     }
   }
+
+  .info {
+    &__inner {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    &__title-media {
+      display: block;
+      margin-bottom: 35px;
+    }
+
+    &__title {
+      display: none;
+    }
+
+    &__map {
+      width: 720px;
+      height: 372px;
+      margin-right: 0;
+    }
+
+    &__content {
+      padding-top: 40px;
+      display: flex;
+      justify-content: flex-start;
+    }
+  }
+
+  /*===============================================================================*/
+
+  .footer {
+    &__bottom {
+      margin: 0;
+    }
+  }
 }
 
 @media (min-width:900px) {
@@ -405,6 +441,7 @@
   }
 }
 
+/*=========================================800======================================*/
 @media (max-width:800px) {
   .team {
 
@@ -458,6 +495,56 @@
       margin-bottom: 20px;
     }
   }
+
+  .info {
+    &__map {
+      width: 100%;
+    }
+  }
+
+  /*===============================================================================*/
+  .footer {
+
+    &__top-list {
+      display: grid;
+      grid-template: repeat(2, 1fr) / repeat(3, 100px);
+      gap: 15px;
+    }
+
+    &__top-item {
+      margin: 0;
+      text-align: center;
+
+      &:nth-child(2),
+      &:nth-child(3) {
+        text-align: end;
+      }
+
+      &:nth-child(5),
+      &:nth-child(6) {
+        text-align: start;
+      }
+    }
+
+    &__bottom-inner {
+      flex-direction: column;
+    }
+
+    &__bottom-text {
+      margin-right: 0;
+      margin-bottom: 15px;
+    }
+
+    &__bottom-list {
+      display: grid;
+      grid-template: repeat(2, 1fr) / repeat(3, 100px);
+      gap: 15px;
+    }
+
+    &__bottom-item {
+      margin: 0;
+    }
+  }
 }
 
 /*=============================================700==================================*/
@@ -501,7 +588,7 @@
       &::after {
         width: 28px;
         height: 28px;
-        top:-7px;
+        top: -7px;
       }
     }
 
@@ -512,6 +599,21 @@
       &::before {
         top: 6px;
         right: 12px;
+      }
+    }
+  }
+
+  .footer {
+    &__entity-inner {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    &__entity-text {
+      text-align: center;
+      margin-bottom: 10px;
+      &:last-child{
+        margin: 0;
       }
     }
   }
@@ -555,7 +657,7 @@
       &::after {
         width: 20px;
         height: 20px;
-        top:-2px;
+        top: -2px;
       }
     }
 
@@ -707,15 +809,32 @@
       font-size: 30px;
       white-space: nowrap;
     }
-    &__input{
+
+    &__input {
       position: relative;
       margin-right: 0;
       padding: 25px 70px 25px 30px;
       max-width: 250px;
     }
-    &__btn{
+
+    &__btn {
       max-width: 250px;
       padding: 25px 60px;
+    }
+  }
+
+  /*===============================================================================*/
+  .info {
+    &__title-media {
+      font-size: 30px;
+    }
+
+    &__map {
+      height: 270px;
+    }
+
+    &__content {
+      flex-direction: column;
     }
   }
 }
@@ -735,7 +854,8 @@
     &__problem,
     &__price,
     &__team,
-    &__reviews {
+    &__reviews,
+    &__info {
       padding: 70px 0;
     }
   }
@@ -754,6 +874,20 @@
   .reviews {
     &__slider-arrows {
       bottom: -26px;
+    }
+  }
+
+  .footer{
+    &__top-list{
+      gap: 5px;
+      grid-template: repeat(2, 1fr)/repeat(3, 85px);
+    }
+    &__top-link{
+      font-size: 14px;
+    }
+    &__bottom-list{
+      gap: 10px;
+      grid-template: repeat(2, 1fr)/repeat(3, 95px);
     }
   }
 }

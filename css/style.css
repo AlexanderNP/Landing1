@@ -176,7 +176,7 @@ html, body {
   letter-spacing: -0.675px;
 }
 
-.info__title, .call__title {
+.info__title, .info__title-media, .call__title {
   font-size: 40px;
   font-weight: 700;
   line-height: 100%;
@@ -1407,6 +1407,10 @@ html, body {
 .info__content {
   padding-top: 75px;
 }
+.info__title-media {
+  display: none;
+  text-align: center;
+}
 .info__title {
   margin-bottom: 50px;
 }
@@ -1530,6 +1534,15 @@ html, body {
   border-radius: 10px;
   background: #FFF;
   padding: 19px 26px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 .footer__icons-box span {
   font-size: 14.3px;
@@ -1727,6 +1740,40 @@ html, body {
   .reviews__text {
     max-width: 595px;
   }
+  .info__inner {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .info__title-media {
+    display: block;
+    margin-bottom: 35px;
+  }
+  .info__title {
+    display: none;
+  }
+  .info__map {
+    width: 720px;
+    height: 372px;
+    margin-right: 0;
+  }
+  .info__content {
+    padding-top: 40px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  /*===============================================================================*/
+  .footer__bottom {
+    margin: 0;
+  }
 }
 @media (min-width: 900px) {
   .problem__block-1 {
@@ -1921,6 +1968,7 @@ html, body {
     display: block;
   }
 }
+/*=========================================800======================================*/
 @media (max-width: 800px) {
   .team__image-box, .team__image-box-2, .team__image-box-3, .team__image-box-4, .team__image-box-5, .team__image-box-6, .team__image-box-7, .team__image-box-8, .team__image-box-9, .team__image-box-10, .team__image-box-11 {
     background-size: 350px, 100% 100%;
@@ -1952,6 +2000,43 @@ html, body {
   }
   .call__input {
     margin-bottom: 20px;
+  }
+  .info__map {
+    width: 100%;
+  }
+  /*===============================================================================*/
+  .footer__top-list {
+    display: grid;
+    grid-template: repeat(2, 1fr)/repeat(3, 100px);
+    gap: 15px;
+  }
+  .footer__top-item {
+    margin: 0;
+    text-align: center;
+  }
+  .footer__top-item:nth-child(2), .footer__top-item:nth-child(3) {
+    text-align: end;
+  }
+  .footer__top-item:nth-child(5), .footer__top-item:nth-child(6) {
+    text-align: start;
+  }
+  .footer__bottom-inner {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .footer__bottom-text {
+    margin-right: 0;
+    margin-bottom: 15px;
+  }
+  .footer__bottom-list {
+    display: grid;
+    grid-template: repeat(2, 1fr)/repeat(3, 100px);
+    gap: 15px;
+  }
+  .footer__bottom-item {
+    margin: 0;
   }
 }
 /*=============================================700==================================*/
@@ -1992,6 +2077,22 @@ html, body {
   .questions__acc-head::after, .questions__acc-head::before {
     top: 6px;
     right: 12px;
+  }
+  .footer__entity-inner {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .footer__entity-text {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  .footer__entity-text:last-child {
+    margin: 0;
   }
 }
 /*=============================================600==================================*/
@@ -2141,13 +2242,26 @@ html, body {
     max-width: 250px;
     padding: 25px 60px;
   }
+  /*===============================================================================*/
+  .info__title-media {
+    font-size: 30px;
+  }
+  .info__map {
+    height: 270px;
+  }
+  .info__content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 /*=============================================450==================================*/
 @media (max-width: 450px) {
   .header__inner {
     width: 100%;
   }
-  .main__advant, .main__problem, .main__price, .main__team, .main__reviews {
+  .main__advant, .main__problem, .main__price, .main__team, .main__reviews, .main__info {
     padding: 70px 0;
   }
   .advant__block {
@@ -2162,6 +2276,17 @@ html, body {
   }
   .reviews__slider-arrows {
     bottom: -26px;
+  }
+  .footer__top-list {
+    gap: 5px;
+    grid-template: repeat(2, 1fr)/repeat(3, 85px);
+  }
+  .footer__top-link {
+    font-size: 14px;
+  }
+  .footer__bottom-list {
+    gap: 10px;
+    grid-template: repeat(2, 1fr)/repeat(3, 95px);
   }
 }
 /*=============================================400==================================*/

@@ -1214,6 +1214,12 @@
     padding-top: 75px;
   }
 
+  &__title-media{
+    display: none;
+    text-align: center;
+    @extend %title-2;
+  }
+
   &__title {
     @extend %title-2;
     margin-bottom: 50px;
@@ -1334,7 +1340,9 @@
     border-radius: 10px;
     background: #FFF;
     padding: 19px 26px;
-
+    display: flex;
+    align-items: center;
+    justify-content: center;
     & span {
       font-size: 14.3px;
       font-weight: 500;
